@@ -1,0 +1,69 @@
+<!-- Write HTML code here -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Watch Movie Prediction</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<h1 class="text-center"><u>Movie Dataset Prediction</u></h2><br>
+		<h2>Training dataset</h2>
+		<table class="table table-dark table-striped">
+			<thead>
+				<tr>
+					{% for h in training_headers %}
+					<th>{{h}}</th>
+					{% endfor %}
+				</tr>
+			</thead>
+			<tbody>
+				{% if training_data %}
+				{% for i in training_data %}
+				<tr>
+					<td>{{ i.genero}}</td>
+					<td>{{ i.calificacion}}</td>
+					<td>{{ i.idioma}}</td>
+					<td>{{ i.clasificacion}}</td>
+					<td>{{ i.subtitulos }}</td>
+					<td>{{ i.ver }}</td>
+				</tr>
+				{% endfor %}
+				{% endif %}
+			</tbody>
+		</table>
+
+		<h2>Testing dataset</h2>
+		<table class="table table-dark table-striped">
+			<thead>
+				<tr>
+					{% for h in testing_headers %}
+					<th>{{h}}</th>
+					{% endfor %}
+				</tr>
+			</thead>
+			<tbody>
+				{% if testing_data %}
+				{% for i in testing_data %}
+				<tr>
+					<td>{{ i.genero}}</td>
+					<td>{{ i.calificacion}}</td>
+					<td>{{ i.idioma}}</td>
+					<td>{{ i.clasificacion}}</td>
+					<td>{{ i.subtitulos }}</td>
+					<td>{{ i.ver }}</td>
+				{% endfor %}
+				{% endif %}
+			</tbody>
+		</table>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+genero,calificacion,idioma,clasificacion,subtitulos,ver
+terror,baja,esp,b,si,si
+accion,alta,esp,b,no,si
+infantil,alta,eng,a,si,si
+terror,media,esp,c,no,no
+terror,alta,eng,b,si,si
+suspenso,baja,eng,b,si,no
+infantil,media,esp,a,si,no
+accion,alta,eng,b,no,no
+terror,media,eng,c,si,no
+accion,baja,esp,c,no,si
+suspenso,alta,esp,b,si,si
